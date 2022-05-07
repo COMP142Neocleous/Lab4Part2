@@ -1,6 +1,6 @@
 /** \file Lab4Part2.cpp
-* \brief A small programm that uses a matrix library
-* \details Implements the use of a matrix library
+* \brief A small matrix library
+* \details Implements the menu of a matrix library
 * \author Andreas Neocleous
 * \date 06/05/2022
 */

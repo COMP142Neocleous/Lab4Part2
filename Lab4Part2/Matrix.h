@@ -1,5 +1,5 @@
 /** \file Matrix.h
-* \brief Header file for small matrix library
+* \brief A small matrix library
 * \details Headers of functions to a matrix library
 * \author Andreas Neocleous
 * \date 06/05/2022
