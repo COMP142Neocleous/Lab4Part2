@@ -116,3 +116,25 @@ void fillMatrix(double mat[][MAX_COL], const int maxRow)
 		}
 	}
 }
+
+/**
+* Function <code>findMaxElement</code> finds the maximum element of a matrix
+*
+* @param mat The matrix which maximum element will be found
+* @param maxRow The maximum row index
+* @return Returns the maximum element of the matrix
+*/
+double findMaxElement(const double mat[][MAX_COL], const int maxRow)
+{
+	double max = mat[0][0];
+
+	for (int i = 0; i < maxRow; i++)
+	{
+		for (int j = 0; j < MAX_COL; j++)
+		{
+			if (max < mat[i][j])
+				max = mat[i][j];
+		}
+	}
+	return max;
+}

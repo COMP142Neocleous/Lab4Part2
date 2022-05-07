@@ -35,7 +35,10 @@ int main()
             << "\n3. Fill with random numbers"
             << "\n4. Print the matrix"
             << "\n5. Fill matrix"
-            << "\n6. Exit";
+            << "\n6. Fill maximum elemetn"
+            << "\n7. Find minimum element"
+            << "\n8. "
+            << "\n9. Exit";
 
         cout << "\nEnter your choice: ";
         cin >> choice;
@@ -71,15 +74,19 @@ int main()
             fillMatrix(matrix, MAX_ROWS);
             break;
         case 6:
+            cout<< "Maximum element of the matrix is: "<<findMaxElement(matrix, MAX_ROWS);
+            break;
+        case 7:
+            break;
+        case 8:
+            break;
+        case 9:
             cout << "\nHave a nice day!!";
             break;
         default:
             cerr << "\nWrong choice!!";
         }
-
-
-
-    } while (choice != 6);
+    } while (choice != 9);
     
 
 
