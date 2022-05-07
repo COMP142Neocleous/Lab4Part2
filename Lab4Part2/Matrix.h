@@ -18,7 +18,8 @@ void fillWithRandomNum(double mat[][MAX_COL], const int maxRow);
 void printMatrix(const double mat[][MAX_COL], const int maxRow);
 void fillMatrix(double mat[][MAX_COL], const int maxRow);
 double findMaxElement(const double mat[][MAX_COL], const int maxRow);
-
+double findMinElement(const double mat[][MAX_COL], const int maxRow);
+bool isSquare(const double mat[][MAX_COL], const int maxRow);
 
 #endif // !MATRIX_H
 

@@ -35,9 +35,9 @@ int main()
             << "\n3. Fill with random numbers"
             << "\n4. Print the matrix"
             << "\n5. Fill matrix"
-            << "\n6. Fill maximum elemetn"
+            << "\n6. Fill maximum element"
             << "\n7. Find minimum element"
-            << "\n8. "
+            << "\n8. Is it a square matrix?"
             << "\n9. Exit";
 
         cout << "\nEnter your choice: ";
@@ -65,7 +65,7 @@ int main()
             break;
         case 3:
             fillWithRandomNum(matrix, MAX_ROWS);
-            cout << "Matrix elements are filled randomly in range of [0-100]!! ";
+            cout << "\nMatrix elements are filled randomly in range of [0-100]!! ";
             break;
         case 4:
             printMatrix(matrix, MAX_ROWS);
@@ -74,11 +74,17 @@ int main()
             fillMatrix(matrix, MAX_ROWS);
             break;
         case 6:
-            cout<< "Maximum element of the matrix is: "<<findMaxElement(matrix, MAX_ROWS);
+            cout<< "\nMaximum element of the matrix is: "<<findMaxElement(matrix, MAX_ROWS);
             break;
         case 7:
+            cout << "\nMinimum element of the matrix is: " << findMinElement(matrix, MAX_ROWS);
             break;
         case 8:
+            cout << "\nIs it a square matrix?";
+            if (isSquare(matrix, MAX_ROWS))
+                cout << "\nYES!! It is a square matrix";
+            else
+                cout << "\nNo, it isn't a square matrix";
             break;
         case 9:
             cout << "\nHave a nice day!!";

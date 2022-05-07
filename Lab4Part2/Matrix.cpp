@@ -138,3 +138,43 @@ double findMaxElement(const double mat[][MAX_COL], const int maxRow)
 	}
 	return max;
 }
+
+/**
+* Function <code>findMinElement</code> finds the minimum element of a matrix
+*
+* @param mat The matrix which minimum element will be found
+* @param maxRow The maximum row index
+* @return Returns the minimum element of the matrix
+*/
+double findMinElement(const double mat[][MAX_COL], const int maxRow)
+{
+	double min = mat[0][0];
+
+	for (int i = 0; i < maxRow; i++)
+	{
+		for (int j = 0; j < MAX_COL; j++)
+		{
+			if (min > mat[i][j])
+				min = mat[i][j];
+		}
+	}
+	return min;
+}
+
+/**
+* Function <code>isSquare</code> checkes if a matrix is square
+*
+* @param mat The matrix to check
+* @param maxRow The maximum row index
+* @return Returns <code>true</code> if it is a square matrix
+*/
+bool isSquare(const double mat[][MAX_COL], const int maxRow)
+{
+	bool yesItIs = true;
+
+	if (maxRow != MAX_COL)
+		yesItIs = false;
+
+	return yesItIs;
+}
+
