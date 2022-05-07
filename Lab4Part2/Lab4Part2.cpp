@@ -27,7 +27,7 @@ int main()
     const int MAX_ROWS = 3;
 
     double matrix[MAX_ROWS][MAX_COL] = { 0 };
-    int choice, row_index;
+    int choice, row_index, col_index;
 
     do {
         cout << "\n1. Sum of row"
@@ -46,17 +46,23 @@ int main()
             do {
                 cout << "\nEnter row you want to sum: ";
                 cin >> row_index;
-                if (row_index < 0 || row_index > MAX_ROWS)
+                if (row_index < 0 || row_index >= MAX_ROWS)
                     cout << "Invalid input!!";
-            } while (row_index < 0 || row_index > MAX_ROWS);
-            //sum = sumOfRow(matrix, row_index, MAX_ROWS);
+            } while (row_index < 0 || row_index >= MAX_ROWS);
             cout<<"\nSum of row "<< row_index<<" is: "<< sumOfRow(matrix, row_index, MAX_ROWS);
             break;
         case 2:
-            cout << "\n2 called";
+            do {
+                cout << "\nEnter row you want to sum: ";
+                cin >> col_index;
+                if (col_index < 0 || col_index >= MAX_COL)
+                    cout << "Invalid input!!";
+            } while (col_index < 0 || col_index >= MAX_COL);
+            cout << "\nSum of column " << col_index << " is: " << sumOfCol(matrix, col_index, MAX_ROWS);
             break;
         case 3:
-            cout << "\n3 called";
+            fillWithRandomNum(matrix, MAX_ROWS);
+            cout << "Matrix elements are filled randomly in range of [0-100]!! ";
             break;
         case 4:
             printMatrix(matrix, MAX_ROWS);
