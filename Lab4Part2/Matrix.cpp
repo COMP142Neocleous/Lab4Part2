@@ -51,7 +51,7 @@ double sumOfCol(const double mat[][MAX_COL], const int column, const int maxRow)
 
 	for (int i = 0; i < maxRow; i++)
 	{
-		sum = mat[i][column];
+		sum += mat[i][column];
 	}
 
 	return sum;
@@ -69,7 +69,7 @@ void fillWithRandomNum(double mat[][MAX_COL], const int maxRow)
 	{
 		for (int j = 0; j < MAX_COL; j++)
 		{
-			mat[j][i] = rand()%100;
+			mat[i][j] = rand()%100;
 		}
 	}
 }
