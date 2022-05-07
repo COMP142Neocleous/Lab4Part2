@@ -92,7 +92,7 @@ int main()
         default:
             cerr << "\nWrong choice!!";
         }
-    } while (choice != 9);
+    } while (choice != 5);
     
 
     return 0;
