@@ -15,9 +15,6 @@ using namespace std;
 //Header file to use
 #include "Matrix.h"
 
-//Global constants
-const int MAX_COL = 4;
-
 /**
 * This is the driver of the program that presents a menu
 * 
@@ -29,7 +26,7 @@ int main()
 
     const int MAX_ROWS = 3;
 
-    int matrix[MAX_ROWS][MAX_COL];
+    double matrix[MAX_ROWS][MAX_COL] = { 0 };
     int choice;
 
     do {
@@ -37,7 +34,8 @@ int main()
             << "\n2. Sum of column"
             << "\n3. Fill with random numbers"
             << "\n4. Print the matrix"
-            << "\n5. Exit";
+            << "\n5. Fill matrix"
+            << "\n6. Exit";
 
         cout << "\nEnter your choice: ";
         cin >> choice;
@@ -54,9 +52,12 @@ int main()
             cout << "\n3 called";
             break;
         case 4:
-            cout << "\n4 called";
+            printMatrix(matrix, MAX_ROWS);
             break;
         case 5:
+            fillMatrix(matrix, MAX_ROWS);
+            break;
+        case 6:
             cout << "\nHave a nice day!!";
             break;
         default:
@@ -65,7 +66,7 @@ int main()
 
 
 
-    } while (choice != 5);
+    } while (choice != 6);
     
 
 
