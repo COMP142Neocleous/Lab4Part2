@@ -29,7 +29,7 @@ double sumOfRow(const double mat[][MAX_COL], const int row, const int maxRow)
 
 	for (int i = 0; i < MAX_COL; i++)
 	{
-		sum += mat[row][MAX_COL];
+		sum += mat[row][i];
 	}
 
 	return sum;

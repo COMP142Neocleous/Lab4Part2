@@ -27,7 +27,7 @@ int main()
     const int MAX_ROWS = 3;
 
     double matrix[MAX_ROWS][MAX_COL] = { 0 };
-    int choice;
+    int choice, row_index;
 
     do {
         cout << "\n1. Sum of row"
@@ -43,7 +43,14 @@ int main()
         switch (choice)
         {
         case 1:
-            cout << "\n1 called";
+            do {
+                cout << "\nEnter row you want to sum: ";
+                cin >> row_index;
+                if (row_index < 0 || row_index > MAX_ROWS)
+                    cout << "Invalid input!!";
+            } while (row_index < 0 || row_index > MAX_ROWS);
+            //sum = sumOfRow(matrix, row_index, MAX_ROWS);
+            cout<<"\nSum of row "<< row_index<<" is: "<< sumOfRow(matrix, row_index, MAX_ROWS);
             break;
         case 2:
             cout << "\n2 called";
