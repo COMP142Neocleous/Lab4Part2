@@ -5,13 +5,13 @@
 * \date 06/05/2022
 */
 
-#include <iostream>
-#include <cassert>
-using namespace std;
-
-#include "Matrix.h"
-
-double sumOfRow(const double mat[][MAX_COL], const int row, const int maxRow)
-{
-	return 0.0;
-}
+//#include <iostream>
+//#include <cassert>
+//using namespace std;
+//
+//#include "Matrix.h"
+//
+//double sumOfRow(const double mat[][MAX_COL], const int row, const int maxRow)
+//{
+//	return 0.0;
+//}
