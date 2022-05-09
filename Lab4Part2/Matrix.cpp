@@ -65,6 +65,8 @@ double sumOfCol(const double mat[][MAX_COL], const int column, const int maxRow)
 */
 void fillWithRandomNum(double mat[][MAX_COL], const int maxRow)
 {
+	assert(maxRow >= 0);
+
 	for (int i = 0; i < maxRow; i++)
 	{
 		for (int j = 0; j < MAX_COL; j++)
@@ -82,6 +84,8 @@ void fillWithRandomNum(double mat[][MAX_COL], const int maxRow)
 */
 void printMatrix(const double mat[][MAX_COL], const int maxRow)
 {
+	assert(maxRow >= 0);
+
 	for (int i = 0; i < maxRow; i++)
 	{
 		cout << "\n[";
@@ -104,6 +108,8 @@ void printMatrix(const double mat[][MAX_COL], const int maxRow)
 */
 void fillMatrix(double mat[][MAX_COL], const int maxRow)
 {
+	assert(maxRow >= 0);
+
 	double filled;
 
 	for (int i = 0; i < maxRow; i++)
@@ -126,6 +132,8 @@ void fillMatrix(double mat[][MAX_COL], const int maxRow)
 */
 double findMaxElement(const double mat[][MAX_COL], const int maxRow)
 {
+	assert(maxRow >= 0);
+
 	double max = mat[0][0];
 
 	for (int i = 0; i < maxRow; i++)
@@ -148,6 +156,8 @@ double findMaxElement(const double mat[][MAX_COL], const int maxRow)
 */
 double findMinElement(const double mat[][MAX_COL], const int maxRow)
 {
+	assert(maxRow >= 0);
+
 	double min = mat[0][0];
 
 	for (int i = 0; i < maxRow; i++)
@@ -170,6 +180,8 @@ double findMinElement(const double mat[][MAX_COL], const int maxRow)
 */
 bool isSquare(const double mat[][MAX_COL], const int maxRow)
 {
+	assert(maxRow >= 0);
+
 	bool yesItIs = true;
 
 	if (maxRow != MAX_COL)
