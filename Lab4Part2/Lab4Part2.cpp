@@ -74,10 +74,10 @@ int main()
             fillMatrix(matrix, MAX_ROWS);
             break;
         case 6:
-            cout<< "\nMaximum element of the matrix is: "<<findMaxElement(matrix, MAX_ROWS);
+            cout<< "\nMinimum element of the matrix is: "<<findMaxElement(matrix, MAX_ROWS);
             break;
         case 7:
-            cout << "\nMinimum element of the matrix is: " << findMinElement(matrix, MAX_ROWS);
+            cout << "\nMaximum element of the matrix is: " << findMinElement(matrix, MAX_ROWS);
             break;
         case 8:
             cout << "\nIs it a square matrix?";
